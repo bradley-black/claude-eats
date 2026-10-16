@@ -19,30 +19,23 @@ eat "goodbye, cruel message"
 ## Run it without installing
 
 ```
-uvx --from /path/to/claude-eats eat
-```
-
-Once pushed to a git repo, anyone can run it with zero setup:
-
-```
-uvx --from git+https://github.com/<you>/claude-eats eat
+uvx --from git+https://github.com/bradley-black/claude-eats eat
 ```
 
 ## Install it permanently
 
 ```
-uv tool install /path/to/claude-eats
+uv tool install git+https://github.com/bradley-black/claude-eats
 eat
 ```
 
-or, once hosted on a git repo:
+Also installable with plain `pip` or `pipx`:
 
 ```
-uv tool install git+https://github.com/<you>/claude-eats
+pipx install git+https://github.com/bradley-black/claude-eats
 ```
 
-Also installable with plain `pip install .` or `pipx install .` — no uv
-required. Both give you the `eat` command (and `claude-eats` as an alias).
+Both give you the `eat` command (and `claude-eats` as an alias).
 
 ## Dev
 
