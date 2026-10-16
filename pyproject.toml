@@ -1,0 +1,17 @@
+[project]
+name = "claude-eats"
+version = "0.1.0"
+description = "A little orange terminal mascot that eats your messages when you type 'eat'."
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+eat = "claude_eats.app:main"
+claude-eats = "claude_eats.app:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/claude_eats"]
